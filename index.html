@@ -418,7 +418,8 @@
       <div class="watch-video-section">
         <h2 class="watch-section-title">Watch decorations at other stores</h2>
 
-        <div class="carousel-wrapper"></div>
+        <div class="carousel-wrapper">
+          <button class="carousel-arrow left-arrow">&#10094;</button>
           <div class="watch-video-container">
             <div class="watch-video-card">
               <div class="watch-video-thumbnail">
@@ -492,10 +493,10 @@
             </div>
           </div>
 
-          <!-- <button class="carousel-arrow right-arrow">&#10095;</button> -->
+          <button class="carousel-arrow right-arrow">&#10095;</button>
         </div>
       </div>
-
+</div>
 
       <!-- Video Popup -->
       <div class="watch-popup-overlay" id="video-popup">
@@ -1142,18 +1143,18 @@ showMoreBtn.addEventListener("click", () => {
 
 
 // Arrow  
-document.addEventListener("DOMContentLoaded", function () {
-  const container = document.querySelector(".watch-video-container");
+const container = document.querySelector(".watch-video-container");
+const rightArrow = document.querySelector(".right-arrow");
+const leftArrow = document.querySelector(".left-arrow");
 
-  const rightArrow = document.querySelector(".right-arrow");
-  /* const leftArrow = document.querySelector(".left-arrow"); 
-    leftArrow.addEventListener("click", function () {
-        container.scrollBy({ left: -200, behavior: "smooth" });
-    });*/
+const scrollAmount = container.offsetWidth * 0.8;
 
-  rightArrow.addEventListener("click", function () {
-    container.scrollBy({ left: 200, behavior: "smooth" });
-  });
+rightArrow.addEventListener("click", function () {
+  container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+});
+
+leftArrow.addEventListener("click", function () {
+  container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
 });
 
 const decorSec = document.querySelector(".watch-video-container.decor-sec");
