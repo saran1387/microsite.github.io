@@ -1509,7 +1509,7 @@ img.notification-image:hover {
 
 button.carousel-arrow.right-arrow {
   right: 40px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0; 
 }
 
 button.carousel-arrow.left-arrow {
@@ -1915,7 +1915,7 @@ button.carousel-arrow.left-arrow {
   }
 
   .progress-circle {
-    background-image: url('Assets/Subtract.png');
+    background-image: url('Subtract.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
