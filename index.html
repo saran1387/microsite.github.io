@@ -878,7 +878,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 
         // Fetch language file
         async function fetchLanguageData(lang) {
-        const response = await fetch(`/${lang}.json`);
+        const response = await fetch(`${lang}.json`);
         return response.json();
   }
 
