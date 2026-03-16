@@ -179,6 +179,7 @@
             <i class="fas fa-chevron-down progress-circle-arrow" style="margin-top: 33px;color: #1F7876;"></i>
             <i class="fas fa-chevron-down progress-circle-arrow" style="color: #C9E7DB;"></i>
           </div>
+          </a>
 
           <a href="#evaluation">
             <div class="progress-circle">
@@ -272,8 +273,8 @@
 
             <!-- Slide 2 -->
             <div class="item-carousel">
-              <img src="carousel2.png" usemap="#image-map">
-              <map name="image-map">
+              <img src="carousel2.png" usemap="#image-map-2">
+              <map name="image-map-2">
                 <area target="_blank" alt="Danglers" title="Danglers"
                   href="https://cms-assets.bajajfinserv.in/is/content/bajajfinance/bfl-citizens-charterpdf?scl=1&amp;fmt=pdf"
                   coords="144,84,247,107" shape="rect" id="carousel2">
@@ -282,8 +283,8 @@
 
             <!-- Slide 3 -->
             <div class="item-carousel">
-              <img src="carousel3.png" usemap="#image-map">
-              <map name="image-map">
+              <img src="carousel3.png" usemap="#image-map-3">
+              <map name="image-map-3">
                 <area target="_blank" alt="Posters" title="Posters"
                   href="https://cms-assets.bajajfinserv.in/is/content/bajajfinance/bfl-citizens-charterpdf?scl=1&amp;fmt=pdf"
                   coords="148,83,247,107" shape="rect" id="carousel3">
@@ -292,8 +293,8 @@
 
             <!-- Slide 4 -->
             <div class="item-carousel">
-              <img src="carousel4.png" usemap="#image-map">
-              <map name="image-map">
+              <img src="carousel4.png" usemap="#image-map-4">
+              <map name="image-map-4">
                 <area target="_blank" alt="Wobblers" title="Wobblers"
                   href="https://cms-assets.bajajfinserv.in/is/content/bajajfinance/bfl-citizens-charterpdf?scl=1&amp;fmt=pdf"
                   coords="246,106,144,83" shape="rect" id="carousel4">
@@ -420,8 +421,8 @@
 
         <div class="carousel-wrapper">
           <button class="carousel-arrow left-arrow">&#10094;</button>
-          <div class="watch-video-container">
-            <div class="watch-video-card">
+          <div class="watch-video-container watch-section-container">
+            <div class="watch-video-card" data-video="your-video-file.mp4">
               <div class="watch-video-thumbnail">
                 <img src="business-loan.png"
                   alt="Store decoration video">
@@ -433,7 +434,7 @@
               </div>
             </div>
 
-            <div class="watch-video-card">
+            <div class="watch-video-card" data-video="your-video-file.mp4">
               <div class="watch-video-thumbnail">
                 <img src="car.png"
                   alt="Store decoration video">
@@ -445,7 +446,7 @@
               </div>
             </div>
 
-            <div class="watch-video-card">
+            <div class="watch-video-card" data-video="your-video-file.mp4">
               <div class="watch-video-thumbnail">
                 <img src="two-wheeler.png"
                   alt="Store decoration video">
@@ -457,7 +458,7 @@
               </div>
             </div>
 
-            <div class="watch-video-card">
+            <div class="watch-video-card" data-video="your-video-file.mp4">
               <div class="watch-video-thumbnail">
                 <img src="doctor.png"
                   alt="Store decoration video">
@@ -469,7 +470,7 @@
               </div>
             </div>
 
-            <div class="watch-video-card">
+            <div class="watch-video-card" data-video="your-video-file.mp4">
               <div class="watch-video-thumbnail">
                 <img src="new-car.png"
                   alt="Store decoration video">
@@ -480,7 +481,8 @@
                 <div class="video-location">Chandan Nagar</div>
               </div>
             </div>
-            <div class="watch-video-card">
+
+            <div class="watch-video-card" data-video="your-video-file.mp4">
               <div class="watch-video-thumbnail">
                 <img src="personal-loan.png"
                   alt="Store decoration video">
@@ -1143,19 +1145,34 @@ showMoreBtn.addEventListener("click", () => {
 
 
 // Arrow  
-const container = document.querySelector(".watch-video-container");
+const container = document.querySelector(".watch-section-container");
 const rightArrow = document.querySelector(".right-arrow");
 const leftArrow = document.querySelector(".left-arrow");
 
-const scrollAmount = container.offsetWidth * 0.8;
+function updateArrows() {
+  const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+  // Hide left arrow at the start
+  leftArrow.style.display = container.scrollLeft <= 0 ? "none" : "flex";
+
+  // Hide right arrow at the end
+  rightArrow.style.display = container.scrollLeft >= maxScrollLeft - 1 ? "none" : "flex";
+}
 
 rightArrow.addEventListener("click", function () {
+  const scrollAmount = container.offsetWidth * 0.8;
   container.scrollBy({ left: scrollAmount, behavior: "smooth" });
 });
 
 leftArrow.addEventListener("click", function () {
+  const scrollAmount = container.offsetWidth * 0.8;
   container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
 });
+
+// Update arrows on scroll
+container.addEventListener("scroll", updateArrows);
+
+updateArrows();
 
 const decorSec = document.querySelector(".watch-video-container.decor-sec");
 if (decorSec) {
