@@ -226,7 +226,7 @@ input:checked+.language-slider:before {
   position: relative;
   z-index: 1;
   padding-bottom: 20px;
-  background: url(glitter.png);
+  background: url(Assets/glitter.png);
 }
 
 .profile-circle {
@@ -384,7 +384,7 @@ input:checked+.language-slider:before {
 }
 
 .progress-circle {
-  background-image: url('Subtract.png');
+  background-image: url('Assets/Subtract.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -578,7 +578,7 @@ input:checked+.language-slider:before {
   color: #e57373;
   font-size: 30px;
   font-weight: 600;
-  margin-left: 101px;
+  margin-left: 169px;
   background: linear-gradient(90deg, #ca5858 0%, #642b2b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -594,7 +594,7 @@ input:checked+.language-slider:before {
 }
 
 .carousel {
-  margin-left: 61px;
+  margin-left: 130px;
 }
 
 .summ-icons {
@@ -649,7 +649,7 @@ input:checked+.language-slider:before {
   border: 2px solid #056159;
   position: absolute;
   z-index: -1;
-  top: 6rem;
+  top: 5rem;
   width: 55%;
   margin-left: 49px;
 }
@@ -657,7 +657,7 @@ input:checked+.language-slider:before {
 .prize-item {
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
   padding-left: 13rem;
   color: #006064;
 }
@@ -668,10 +668,14 @@ input:checked+.language-slider:before {
 
 .prize-icon {
   font-size: 20px;
-  margin-right: 15px;
+  margin-right: 6%;
   color: #00897b;
   width: 24px;
   text-align: center;
+}
+
+.prize-icon img {
+  width: 50px;
 }
 
 .prize-text {
@@ -1006,7 +1010,7 @@ img.notification-image:hover {
 
 .products-showcase {
   max-width: 50%;
-  margin-left: 80px;
+  margin-left: 200px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -1495,7 +1499,6 @@ img.notification-image:hover {
   transform: translateY(-50%);
   font-size: 20px;
   z-index: 10;
-  border-radius: 10px 0 0 10px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -1506,6 +1509,12 @@ img.notification-image:hover {
 
 .right-arrow {
   right: 40px;
+  border-radius: 0 5px 5px 0;
+}
+
+.left-arrow {
+  border-radius: 5px 0 0 5px;
+  left: 25px;
 }
 
 /* Video Popup Styles */
@@ -1764,7 +1773,7 @@ img.notification-image:hover {
     position: relative;
     z-index: 1;
     padding-bottom: 20px;
-    background: url(glitter.png);
+    background: url(Assets/glitter.png);
   }
 
   .profile-circle {
@@ -1906,7 +1915,7 @@ img.notification-image:hover {
   }
 
   .progress-circle {
-    background-image: url('Subtract.png');
+    background-image: url('Assets/Subtract.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -2099,7 +2108,7 @@ img.notification-image:hover {
   }
 
   .decoration-collaterals {
-    padding: 5px 0px 30px 15px;
+    padding: 5px 0px 15px 15px;
     background-color: #fff;
     position: relative;
     z-index: 1;
@@ -2220,7 +2229,7 @@ img.notification-image:hover {
   }
 
   .prize-model {
-    width: 70%;
+    width: 73%;
     height: auto;
     display: block;
   }
@@ -2255,7 +2264,7 @@ img.notification-image:hover {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    padding-left: 6rem;
+    padding-left: 5rem;
     color: #006064;
   }
 
@@ -2267,8 +2276,12 @@ img.notification-image:hover {
     font-size: 20px;
     margin-right: 15px;
     color: #00897b;
-    width: 24px;
+    width: 20px;
     text-align: center;
+  }
+
+  .prize-icon img{
+    width: 28px
   }
 
   .prize-text {
@@ -2300,7 +2313,7 @@ img.notification-image:hover {
   .prizes-content {
     flex: 0 0 100%;
     padding-right: 0;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
   }
 
   .evaluation-criteria {
@@ -2456,7 +2469,7 @@ img.notification-image:hover {
 
   .winners-notification-wrap {
     padding: 20px 0px;
-    background-image: url("effect.png");
+    background-image: url("Assets/effect.png");
     background-color: #FBE2BB;
   }
 
@@ -3019,6 +3032,7 @@ img.notification-image:hover {
     padding: 10px 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-behavior: smooth;
   }
 
   .watch-video-container::-webkit-scrollbar {
