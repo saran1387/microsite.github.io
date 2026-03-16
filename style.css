@@ -1507,12 +1507,12 @@ img.notification-image:hover {
   transition: background 0.3s;
 }
 
-.right-arrow {
+button.carousel-arrow.right-arrow {
   right: 40px;
   border-radius: 0 5px 5px 0;
 }
 
-.left-arrow {
+button.carousel-arrow.left-arrow {
   border-radius: 5px 0 0 5px;
   left: 25px;
 }
