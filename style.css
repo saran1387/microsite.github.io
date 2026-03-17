@@ -1432,7 +1432,6 @@ img.notification-image:hover {
 
 .watch-video-card {
   flex: 0 0 calc(20% - 12px);
-  /* 4.5 cards visible: 100% / 4.5 = 22.22% */
   max-width: calc(20% - 12px);
   border-radius: 10px;
   overflow: hidden;
@@ -2149,8 +2148,8 @@ button.carousel-arrow.left-arrow {
   }
 
   .watch-video-container.decor-sec {
-    -ms-overflow-style: none;
     scrollbar-width: none;
+    gap: 0px;
   }
 
   .item-carousel {
@@ -3041,11 +3040,12 @@ button.carousel-arrow.left-arrow {
 
   .watch-video-card {
     flex: 0 0 auto;
-    width: 150px;
+    width: 110px;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: none;
   }
 
   .watch-video-thumbnail {
@@ -3083,6 +3083,20 @@ button.carousel-arrow.left-arrow {
     font-size: 16px;
     margin-left: 3px;
     /* Slight adjustment for the play icon */
+  }
+
+  .carousel-arrow {
+    width: 30px;
+    height: 30px;
+
+  }
+
+.carousel-arrow.right-arrow {
+    right: -12px;
+  }
+
+.carousel-arrow.left-arrow {
+    left: -12px;
   }
 
   .video-info {
@@ -3173,15 +3187,6 @@ button.carousel-arrow.left-arrow {
     width: 100%;
     height: 100%;
     border: none;
-  }
-
-  /* Responsive adjustments */
-  .watch-video-card {
-    width: 110px;
-  }
-
-  .watch-video-thumbnail {
-    height: 180px;
   }
 
   .video-title {
