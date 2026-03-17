@@ -1410,7 +1410,7 @@ img.notification-image:hover {
   width: 100%;
 }
 
-.watch-video-container {
+.watch-section-container {
   display: flex;
   overflow-x: auto;
   gap: 12px;
@@ -1422,7 +1422,7 @@ img.notification-image:hover {
   margin: 0 auto;
 }
 
-.watch-video-container::-webkit-scrollbar {
+.watch-section-container::-webkit-scrollbar {
   display: none;
 }
 
@@ -3025,7 +3025,7 @@ button.carousel-arrow.left-arrow {
     -webkit-text-fill-color: transparent;
   }
 
-  .watch-video-container {
+  .watch-section-container {
     display: flex;
     overflow-x: auto;
     gap: 12px;
@@ -3035,7 +3035,7 @@ button.carousel-arrow.left-arrow {
     scroll-behavior: smooth;
   }
 
-  .watch-video-container::-webkit-scrollbar {
+  .watch-section-container::-webkit-scrollbar {
     display: none;
   }
 
