@@ -3032,6 +3032,7 @@ button.carousel-arrow.left-arrow {
     scrollbar-width: none;
     -ms-overflow-style: none;
     scroll-behavior: smooth;
+    width: auto;
   }
 
   .watch-section-container::-webkit-scrollbar {
@@ -3091,11 +3092,11 @@ button.carousel-arrow.left-arrow {
 
   }
 
-.carousel-arrow.right-arrow {
+button.carousel-arrow.right-arrow {
     right: -12px;
   }
 
-.carousel-arrow.left-arrow {
+button.carousel-arrow.left-arrow {
     left: -12px;
   }
 
