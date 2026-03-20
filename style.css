@@ -12,7 +12,6 @@
 }
 
 /*Desktop Reponsive*/
-
 body {
   padding-top: 0px !important;
 }
@@ -597,7 +596,6 @@ input:checked+.language-slider:before {
 }
 
 /* Carousel Customization */
-
 .carousel-inner {
   border-radius: 5px;
   display: flex;
@@ -609,7 +607,6 @@ input:checked+.language-slider:before {
 }
 
 .winning-prizes {
-  /* background-color: #fff; */
   background: linear-gradient(180deg, #FFFFFF 0%, #FBE2BB 100%);
   padding: 20px 15px 49px 0;
   position: relative;
@@ -692,7 +689,6 @@ input:checked+.language-slider:before {
 }
 
 /* Responsive Adjustments */
-
 .prizes-container img.glitter-effect {
   transform: rotate(180deg);
   z-index: -1;
@@ -860,7 +856,6 @@ input:checked+.language-slider:before {
 
 
 /* Make the banner responsive */
-
 .terms-banner {
   padding: 10px 12px;
   font-size: 16px;
@@ -881,7 +876,6 @@ input:checked+.language-slider:before {
 .winners-notification {
   position: relative;
   z-index: 1;
-  /* overflow: hidden; */
 }
 
 .notification-container {
@@ -1273,7 +1267,6 @@ img.notification-image:hover {
 .video-popup-content {
   width: 100%;
   padding-top: 56.25%;
-  /* 16:9 Aspect Ratio */
   position: relative;
 }
 
@@ -1297,7 +1290,6 @@ img.notification-image:hover {
 }
 
 /* leaf section style */
-
 .palm-leaf {
   position: absolute;
   width: 17%;
@@ -1382,7 +1374,6 @@ img.notification-image:hover {
 }
 
 /* Watch decoration video */
-
 .watch-video-section {
   background-color: #F7EBD0;
   padding: 20px;
@@ -1560,7 +1551,6 @@ button.carousel-arrow.left-arrow {
 .watch-popup-content {
   width: 100%;
   padding-top: 56.25%;
-  /* 16:9 Aspect Ratio */
   position: relative;
 }
 
@@ -1577,25 +1567,17 @@ button.carousel-arrow.left-arrow {
 /* Responsive adjustments */
 .video-title {
   color: #FFFFFF;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   margin-bottom: 2px;
+  white-space: nowrap;
 }
 
 .watch-video-card {
   width: 110px;
 }
 
-
-.video-title {
-  color: #FFFFFF;
-  font-size: 10px;
-  font-weight: 500;
-  margin-bottom: 2px;
-}
-
 /*Mobile Reponsive */
-
 @media (max-width: 768px) {
   body {
     padding-top: 0px !important;
@@ -1866,7 +1848,6 @@ button.carousel-arrow.left-arrow {
   }
 
   /* Responsive Adjustments */
-
   .collateral-card {
     height: 242px;
     width: 263px;
@@ -1897,7 +1878,6 @@ button.carousel-arrow.left-arrow {
   }
 
   .winning-prizes {
-    /* background-color: #fff; */
     background: linear-gradient(180deg, #FFFFFF 0%, #FBE2BB 100%);
     padding: 20px 15px 10px 0;
     position: relative;
@@ -1981,7 +1961,6 @@ button.carousel-arrow.left-arrow {
   }
 
   /* Responsive Adjustments */
-
   .prizes-container img.glitter-effect {
     transform: rotate(180deg);
     z-index: -1;
@@ -2133,7 +2112,6 @@ button.carousel-arrow.left-arrow {
   }
 
   /* Make the banner responsive */
-
   .terms-banner {
     padding: 10px 12px;
     font-size: 12px;
@@ -2153,7 +2131,6 @@ button.carousel-arrow.left-arrow {
   .winners-notification {
     position: relative;
     z-index: 1;
-    /* overflow: hidden; */
   }
 
   .notification-container {
@@ -2519,7 +2496,6 @@ button.carousel-arrow.left-arrow {
   .video-popup-content {
     width: 100%;
     padding-top: 56.25%;
-    /* 16:9 Aspect Ratio */
     position: relative;
   }
 
@@ -2543,7 +2519,6 @@ button.carousel-arrow.left-arrow {
   }
 
   /* leaf section style */
-
   .palm-leaf {
     position: absolute;
     width: 180px;
@@ -2645,7 +2620,6 @@ button.carousel-arrow.left-arrow {
   }
 
   /* Watch decoration video */
-
   .watch-video-section {
     background-color: #F7EBD0;
     padding: 20px 15px;
@@ -2721,12 +2695,12 @@ button.carousel-arrow.left-arrow {
     color: white;
     font-size: 16px;
     margin-left: 3px;
-    /* Slight adjustment for the play icon */
   }
 
   .carousel-arrow {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 28px;
+    font-size: 18px;
 
   }
 
@@ -2745,14 +2719,6 @@ button.carousel-arrow.left-arrow {
     width: 100%;
     padding: 10px;
     background: linear-gradient(1.83deg, #1E1E1E 1.63%, rgba(0, 0, 0, 0.4) 118.2%);
-  }
-
-  .video-title {
-    color: #FFFFFF;
-    font-size: 10px;
-    font-weight: 500;
-    margin-bottom: 2px;
-    white-space: nowrap;
   }
 
   .video-location {
@@ -2814,7 +2780,6 @@ button.carousel-arrow.left-arrow {
   .watch-popup-content {
     width: 100%;
     padding-top: 56.25%;
-    /* 16:9 Aspect Ratio */
     position: relative;
   }
 
@@ -2829,9 +2794,7 @@ button.carousel-arrow.left-arrow {
   }
 
   .video-title {
-    color: #FFFFFF;
     font-size: 10px;
-    font-weight: 500;
-    margin-bottom: 2px;
+    text-wrap: auto;
   }
 }
