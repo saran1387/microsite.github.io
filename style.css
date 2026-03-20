@@ -1544,7 +1544,7 @@ button.carousel-arrow.left-arrow {
 }
 
 .watch-popup-close i {
-  color: #fff;
+  color: #ff6700;
   font-size: 16px;
 }
 
@@ -2770,11 +2770,6 @@ button.carousel-arrow.left-arrow {
 
   .watch-popup-close:hover {
     background-color: rgba(255, 255, 255, 0.4);
-  }
-
-  .watch-popup-close i {
-    color: #fff;
-    font-size: 16px;
   }
 
   .watch-popup-content {
