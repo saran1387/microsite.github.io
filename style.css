@@ -588,7 +588,7 @@ input:checked+.language-slider:before {
   color: #e57373;
   font-size: 30px;
   font-weight: 600;
-  margin-left: 169px;
+  margin-left: 131px;
   background: linear-gradient(90deg, #ca5858 0%, #642b2b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1397,7 +1397,7 @@ img.notification-image:hover {
 
 .watch-section-container {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   gap: 12px;
   padding: 10px 0;
   scrollbar-width: none;
@@ -1423,6 +1423,7 @@ img.notification-image:hover {
   position: relative;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background: white;
+  pointer-events: all;
 }
 
 
@@ -2638,7 +2639,7 @@ button.carousel-arrow.left-arrow {
 
   .watch-section-container {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     gap: 12px;
     padding: 10px 0;
     scrollbar-width: none;
@@ -2659,6 +2660,7 @@ button.carousel-arrow.left-arrow {
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: none;
+    pointer-events: all;
   }
 
   .watch-video-thumbnail {
