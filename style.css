@@ -2640,8 +2640,6 @@ button.carousel-arrow.left-arrow {
     font-size: 18px;
     font-weight: 500;
     margin: 0 0 5px 4px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .watch-section-container {
