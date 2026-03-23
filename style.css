@@ -1469,7 +1469,7 @@ img.notification-image:hover {
   background: rgba(0, 0, 0, 0.7);
   color: white;
   font-size: 12px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Arrows for scrolling */
@@ -1568,11 +1568,20 @@ button.carousel-arrow.left-arrow {
 /* Responsive adjustments */
 .video-title {
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   margin-bottom: 2px;
   white-space: nowrap;
 }
+
+  .video-location {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
 .watch-video-card {
   width: 110px;
@@ -2724,12 +2733,7 @@ button.carousel-arrow.left-arrow {
   }
 
   .video-location {
-    color: #FFFFFF;
     font-size: 10px;
-    font-weight: 500;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   /* Video Popup Styles */
