@@ -2639,9 +2639,7 @@ button.carousel-arrow.left-arrow {
   .watch-section-title {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 15px;
-    padding-left: 5px;
-    background: var(--neutrals-black-1-a-1-a-1-a, #1A1A1A);
+    margin: 0 0 5px 4px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
